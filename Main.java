@@ -13,7 +13,6 @@ public class Main {
 
         out.println("Вас приветствует игра без названия!\nВведите '!' для просмотра списка комманд.\nВведите 'start' для начала игры.");
         ConsoleCommands.getCommand();
-        out.println("Введите имя вашего персонажа: ");
 
 
 

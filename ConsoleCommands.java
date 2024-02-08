@@ -1,11 +1,12 @@
 import java.util.Objects;
 import java.util.Scanner;
 
-class ConsoleCommands implements Runnable{
-
+class ConsoleCommands {
+    static Scanner command = new Scanner(System.in);
 
     public static String getCommand() {
-        Scanner command = new Scanner(System.in);
+
+
         switch (command.nextLine()) {
             case ("start") -> {
                 if (!Game.isInGame) {
@@ -35,16 +36,14 @@ class ConsoleCommands implements Runnable{
             case ("!") -> {
                 System.out.println("инструкция");
             }
+
             default -> {
-                System.out.println("Вы ввели не коану.\nВвеите '!' ля росотре сиска коан");
+                if (command.hasNextInt()){
+                System.out.println("Вы ввели не команду");
             }
+        }
 
 
-        } return getCommand();
-    }
-
-    @Override
-    public void run() {
-
+        return getCommand();
     }
 }

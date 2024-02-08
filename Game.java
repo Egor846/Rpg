@@ -6,7 +6,9 @@ public class Game {
 
     public static boolean InGame() {
         out.println("Начало новой игры");
+        out.println("Введите имя вашего персонажа: ");
         return true;
+
 
     }
 }
