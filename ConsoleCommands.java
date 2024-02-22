@@ -32,7 +32,7 @@ getCommand();
                 case "!" ->
                         System.out.println("\tСПИСОК КОММАНД:\n1.'start' - начало игры.\n2.'exit' - выход из игры.\n3.'status' - узнать статус игры.\n4.'!' - выводит это сообщение.");
             }
-        } else getCommand();
+        }
 
         if (justGotCommand.equals("1") | justGotCommand.equals("2") | justGotCommand.equals("3") | justGotCommand.equals("4")){
             System.out.println("вариант выбора");
